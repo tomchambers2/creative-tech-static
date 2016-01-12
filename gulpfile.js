@@ -5,6 +5,12 @@ var serveIndex = require('serve-index');
 var wrap = require('gulp-wrap');
 var del = require('del');
 var runSeq = require('run-sequence');
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('serve', function(cb) {
 	runSeq('clean', 'layout', 'move', 'connect', cb)
