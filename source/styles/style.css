@@ -16,6 +16,18 @@ h2 {
 	margin: 120px auto 40px auto;
 }
 
+h3 {
+	margin-top: 60px;
+}
+
+section li {
+	list-style-position: inside;
+}
+
+a {
+	color: #000;
+}
+
 /* top */
 nav {
 	height: 50px;
@@ -58,9 +70,24 @@ section {
 }
 
 section p {
-	width: 40%;
+	width: 60%;
 	margin: 30px auto 30px auto;
 	text-align: justify;
+}
+
+section p.caption {
+	text-align: center;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+section ul, section ol {
+	width: 60%;
+	margin: 30px auto 30px auto;
+}
+
+section li {
+	margin-top: 30px;
 }
 
 section.blog p {
@@ -82,7 +109,36 @@ section.carousel {
 }
 
 .slick-dots {
-	bottom: 0px;
+	bottom: 0px
+}
+
+.slick-dots li button:before {
+	color: #fff;
+	opacity: 0.5;
+	font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #fff;
+	opacity: 1;
+	font-size: 14px;
+}
+
+.slick-prev, .slick-next {
+	z-index: 10;
+}
+
+.slick-prev {
+	left: 50px;
+}
+
+
+.slick-next {
+	right: 50px;
+}
+
+.slick-prev:before, .slick-next:before {
+	font-size: 30px;
 }
 
 .carousel-item {
@@ -111,14 +167,33 @@ section.carousel {
 }
 
 /* work */
-section.work {
-	width: 80%;
-	margin: auto;
+section .grid {
+	margin: 0 auto;
 }
 
 section.work .grid-item {
 	width: 300px;
+	margin-bottom: 30px;
 }
+
+section.work .grid-item-large {
+	width: 630px;
+}
+
+section.work .grid {
+	margin: auto;
+	width: 1000px;
+}
+
+.grid-item {
+	transition-duration: 0.5s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+ }
+
 
 /* blog */
 section.blog h2 {
@@ -127,11 +202,11 @@ section.blog h2 {
 
 
 /* fonts */
-.primary-text, h1, h2, h3, nav {
+.primary-text, h1, h2, h3, nav, nav ul {
 	font-family: 'Roboto Slab', serif;
 }
 
-.secondary-text, p {
+.secondary-text, p, li {
 	font-family: 'Open Sans', sans-serif;
 }
 
