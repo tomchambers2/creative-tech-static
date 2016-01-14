@@ -7,9 +7,13 @@ var del = require('del');
 var runSeq = require('run-sequence');
 var ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
+});
+
+gulp.task('build', function(cb) {
+  runSeq('clean', 'layout', 'move', cb);
 });
 
 gulp.task('serve', function(cb) {
