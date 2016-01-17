@@ -104,6 +104,10 @@ section.carousel {
 	height: 100%;
 }
 
+video.carousel-video {
+	width: 100%;
+}
+
 .slick-slider, .slick-list, .slick-track {
 	height: 100%;
 }
@@ -154,12 +158,23 @@ section.carousel {
 }
 
 .person  {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	border-radius: 9999px;
 	margin: auto;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.person-text.swapped {
+	display: none;
+}
+
+.person video {
+	margin: 0 auto;
+	width: 300px;
 }
 
 .person+h3 {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Random Quark</title>
+	<title>random quark</title>
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css"/>
@@ -10,20 +10,25 @@
 </head>
 <body>
 	<nav>
-		<a href="/"><h1 class="pull-left">Random Quark</h1></a>
+		<a href="/"><h1 class="pull-left">random quark</h1></a>
 		<ul class="pull-right">
-			<li><a href="/#what">What we do</a></li>
-			<li><a href="/#work">Our work</a></li>
-			<li><a href="/#us">Us</a></li>
-			<li><a href="/#contact">Contact</a></li>
+			<li><a href="/#about">about</a></li>
+			<li><a href="/#work">work</a></li>
+			<li><a href="/#people">people</a></li>
+			<li><a href="/#contact">contact</a></li>
 		</ul>
 	</nav>
 	<div class="cf"></div>
 
 		<section class="carousel">
 		<div class="carousel-container">
+			<div class="carousel-item">
+				<video autoplay class="carousel-video" id="book-awards-video" loop muted>
+					<source src="/videos/book-awards.webm">
+					<source src="/videos/book-awards.mp4">
+				</video>
+			</div>
 			<div class="carousel-item" style="background-image:url(images/carousel/art-hackathon.png)"></div>
-			<div class="carousel-item" style="background-image:url(images/carousel/book-awards.png)"></div>
 			<div class="carousel-item" style="background-image:url(images/carousel/christmas-carol.png)"></div>
 			<div class="carousel-item" style="background-image:url(images/carousel/code-poetry.jpg)"></div>
 			<div class="carousel-item" style="background-image:url(images/carousel/radio-nippon.jpg)"></div>
@@ -31,23 +36,19 @@
 		</div>
 	</section>
 
-	<section class="what">
-		<a name="what"></a>
-		<h2>What we do</h2>
-		<h2>About random quark</h2>
-		<h3>Who we are</h3>
-		<p>Random quark is a creative technology company building state of the art, exciting experiences in large-format projections, interactive installations and other media. Our team consists of computer scientists, creative technologists and visual artists.</p>
-		<h3>What we do</h3>
-		<p>We specialize in designing and developing experiences that combine the real with the virtual. We create bespoke interactive installations that augment experiences and environments. By applying creative twists, we endevour to highlight our relationship with machines and ignite the potential of participants as actors. Apart from commercial commissions we work also in artistic contexts, working with artists and designers to realize their vision.</p>
-		<h3>How we do it</h3>
-		<p>We strive to maintain a balance between the use of technology and the narrative and aesthetic needs of a production. As creative technologists we try to look beyond the “awe of implementation” and determine which technology truly serves the performance.</p>
-		<h3>The technology</h3>
-		<p>In order to create interactive environments we employ a wide range of sensors and we utilize the extensive combined knowledge in computer vision technologies that the team has. All of our tools are developed in-house using industry standard libraries and frameworks and are open source.</p>
+	<section class="about">
+		<a name="about"></a>
+		<h2>about random quark</h2>
+		<p>Random quark is a creative technology company building state of the art, engaging experiences in large-format projections, interactive installations and other media.</p>
+
+		<p>We specialize in designing and developing experiences that combine the real with the virtual. We create bespoke interactive installations that augment experiences and environments. By applying creative twists, we endevour to highlight our relationship with machines and ignite the potential of participants as actors. Apart from commercial commissions we work also in artistic contexts, collaborating with artists and designers to realize their vision.</p>
+
+		<p>We strive to maintain a balance between the use of technology and the needs of a production. Our extensive combined knowledge includes specialization in computer graphics, web and mobile technologies, machine vision, electronics & hardware and virtual reality. Our work owes a lot to the free software movement and we regularly borrow from and contribute to open source projects.</p>
 	</section>
 
 	<section class="work">
 		<a name="work"></a>
-		<h2>Our work</h2>
+		<h2>work</h2>
 		<div class="grid">
 			<a href="/case-studies/book-awards.html">
 			  <div class="grid-item">
@@ -85,7 +86,7 @@
 			  	<span class="title">Migration Map</span>
 			  </div>
 			</a>
-			<a href="/case-studies/recycling-script.html">
+			<a href="/case-studies/recycling-scripts.html">
 			  <div class="grid-item">
 			  	<img src="images/projects/recycling-scripts.jpg" alt="">
 			  	<span class="title">Recycling Scripts</span>
@@ -94,42 +95,52 @@
 		</div>		
 	</section>	
 
-	<section class="us">
-		<a name="us"></a>
-		<h2>Us</h2>
+	<section class="people">
+		<a name="people"></a>
+		<h2>people</h2>
 		<div class="row">
 			<div class="person-holder">
-				<div class="person" style="background-image:url(images/001.jpg)"></div>	
-				<h3>Theodoros Papatheodorou PhD</h3>
-				<p>Theodoros is a developer, educator and creative technology enthusiast, implementing solutions for artists, spaces and institutions. His work has been exhibited internationally and his interactive projections have been featured in plays and live shows of all genres.</p>
-				<p>He studied Psychology in the University of Wisconsin-Madison before getting an MSc in Computer Science from Imperial College, London. He stayed on to do a PhD in Computer Vision before returning to Greece and starting visualcortex, a creative technology studio, while also teaching Computational Media at the Athens School of Fine Arts.</p>
-				<p>He is currently a Lecturer of Computational Arts at Goldsmiths where he directs the MA/MFA in Computational Arts and the BSc in Digital Arts Computing.</p>
-				<p><a href="http://artech.cc">Theodoros' personal site</a></p>
+				<div class="person">
+					<video id="theo-video" loop muted>
+						 <source src="videos/people-left.webm">
+						 <source src="videos/people-left.mp4">
+					</video>
+				</div>	
+				<div class="person-text-container left">
+					<div class="person-text theo original">
+						<h3>Theodoros Papatheodorou PhD</h3>
+						<p>Theodoros is a developer, educator and creative technology enthusiast, implementing solutions for artists, spaces and institutions. His work has been exhibited internationally and his interactive projections have been featured in plays and live shows of all genres.</p>
+						<p>He studied Psychology in the University of Wisconsin-Madison before getting an MSc in Computer Science from Imperial College, London. He stayed on to do a PhD in Computer Vision before returning to Greece and starting visualcortex, a creative technology studio, while also teaching Computational Media at the Athens School of Fine Arts.</p>
+						<p>He is currently a Lecturer of Computational Arts at Goldsmiths where he directs the MA/MFA in Computational Arts and the BSc in Digital Arts Computing.</p>
+						<p><a href="http://artech.cc" target="_blank">Theodoros' personal site</a></p>
+					</div>
+				</div>
 			</div>
 			<div class="person-holder">
-				<div class="person" style="background-image:url(images/001.jpg)"></div>	
-				<h3>Tom Chambers</h3>
-				<p>Tom Chambers is a creative coder and full stack web developer with more than 3 years of professional experience. He understands servers and pixels inside out.</p>
-				<p>He studied politics at Goldsmiths, University of London. He did a stint in the world of startups at <a href="http://www.joinef.com/">Entrepreneur First</a>, the only investment programme that selects entirely on the basis of talent. He then landed in web development and found a sideline as an artist exploring social norms and creating absurd situations. Since then he’s been bringing the worlds of technology and art together in experimental fashion.</p>
-				<p><a href="http://tomchambers.me">Tom's personal site</a></p>
-				<p>
-					Some things Tom has written recently on <a href="http://tech-blog.tomchambers.me/">his blog</a>:
-					<ul>
-						<li><a href="http://tech-blog.tomchambers.me/2016/01/13/How-to-write-a-simple-page-rewriting-Chrome-extension/">How to write a simple page rewriting Chrome extension</a></li>
-						<li><a href="http://tech-blog.tomchambers.me/2015/12/20/migration-map/">Building the Migration Map</a></li>
-						<li><a href="http://tech-blog.tomchambers.me/2015/11/19/Unleash-the-automated-hounds/">Unleash the automated hounds</a></li>
-						<li><a href="http://tech-blog.tomchambers.me/2015/11/19/10-things-I-hate-about-microservices/">10 things I hate about microservices</a></li>
-					</ul>
-				</p>				
+				<div class="person">
+					<video id="tom-video" loop muted>
+						<source src="videos/people-right.mp4">
+						<source src="videos/people-right.webm">
+					</video>
+				</div>
+				<div class="person-text-container right">
+					<div class="person-text tom original">
+						<h3>Tom Chambers</h3>
+						<p>Tom Chambers is a creative coder and full stack web developer with more than 3 years of professional experience. He understands servers and pixels inside out.</p>
+						<p>He studied politics at Goldsmiths, University of London. He did a stint in the world of startups at accelerator <a href="http://www.joinef.com/" target="_blank">ef</a>, He then landed in web development and found a sideline as an artist exploring social norms and creating absurd situations. Since then he’s been bringing the worlds of technology and art together in experimental fashion.</p>
+						<p><a href="http://tomchambers.me">Tom's personal site</a> and <a href="http://tech-blog.tomchambers.me/" target="_blank">blog</a></p>
+					</div>
+				</div>
 			</div>
 		</div>
+		<section class="cf"></section>
 	</section>
 
 	<section class="cf"></section>
 
 	<section>
 		<a name="contact"></a>
-		<h2>Contact</h2>
+		<h2>contact</h2>
 		<p class="center">Like what you see? Get in touch at <a href="mailto:hello@randomquark.com">hello@randomquark.com</a></p>
 	</section>
 
@@ -139,5 +150,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="/js/masonry.js"></script>
 	<script src="/js/main.js"></script>
+	<script src="/js/people.js"></script>
 </body>
 </html>
