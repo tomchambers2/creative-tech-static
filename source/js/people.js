@@ -34,7 +34,7 @@ $(document).on('ready', function() {
 	function getAction(currentTime) {
 		if (!currentStages.length && Math.round(currentTime) === 0) {
 			console.log('reset')
-			currentStages = stages.slice(0);;
+			currentStages = stages.slice(0);
 		}
 		for (var i = 0; i < currentStages.length; i++) {
 			if (currentStages[i].time <= currentTime) {
