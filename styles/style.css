@@ -84,10 +84,7 @@ section p.caption {
 section ul, section ol {
 	width: 60%;
 	margin: 30px auto 30px auto;
-}
-
-section li {
-	margin-top: 30px;
+	text-align: left;
 }
 
 section.blog p {
@@ -106,6 +103,8 @@ section.carousel {
 
 video.carousel-video {
 	width: 100%;
+	position: relative;
+	bottom: 0;
 }
 
 .slick-slider, .slick-list, .slick-track {

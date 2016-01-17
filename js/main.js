@@ -1,13 +1,24 @@
+function setVideoHeight() {
+	var offset = $('.carousel-video').height() - $('.carousel-item').height()
+	console.log(offset)
+	$('.carousel-video').css({ bottom: offset });
+}
+
 $(document).ready(function(){
 	$('.carousel-container').on('init', function() {
-		document.getElementById('book-awards-video').play()
+		document.getElementById('book-awards-video').play();
+		setVideoHeight();
+	});
+
+	$(window).resize(function() {
+		setVideoHeight();
 	});
 
 	$('.carousel-container').slick({
 		autoplay: true,
 		accessibility: true,
 		dots: true,
-		autoplaySpeed: 9000
+		autoplaySpeed: 5000
 	});
 
 	$('.grid').imagesLoaded( function(){

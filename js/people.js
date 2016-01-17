@@ -16,9 +16,7 @@ $(document).on('ready', function() {
 	});
 
 	function doLoad() {
-		console.log('loaded',loaded)
 		if (loaded.length === 2) {
-			console.log('raelly')
 			document.getElementById('theo-video').play();
 			document.getElementById('tom-video').play();
 		}		
@@ -36,7 +34,7 @@ $(document).on('ready', function() {
 	function getAction(currentTime) {
 		if (!currentStages.length && Math.round(currentTime) === 0) {
 			console.log('reset')
-			currentStages = stages;
+			currentStages = stages.slice(0);
 		}
 		for (var i = 0; i < currentStages.length; i++) {
 			if (currentStages[i].time <= currentTime) {
