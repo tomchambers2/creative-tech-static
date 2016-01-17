@@ -21,6 +21,8 @@
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-server-livereload": "^1.5.4",
     "gulp-wrap": "^0.11.0",
     "run-sequence": "^1.1.5",
     "serve-index": "^1.7.2",

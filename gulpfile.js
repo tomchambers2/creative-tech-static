@@ -6,6 +6,7 @@ var wrap = require('gulp-wrap');
 var del = require('del');
 var runSeq = require('run-sequence');
 var ghPages = require('gulp-gh-pages');
+var server = require('gulp-server-livereload');
 
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
@@ -17,20 +18,18 @@ gulp.task('build', function(cb) {
 });
 
 gulp.task('serve', function(cb) {
-	runSeq('clean', 'layout', 'move', 'connect', cb)
+	runSeq('clean', 'layout', 'move', 'connect', cb);
+
+  gulp.watch('source/**/*', function() {
+    runSeq('clean', 'layout', 'move');
+  })
 });
 
 gulp.task('connect', function () {
-  var app = require('connect')()
-    .use(serveStatic('.tmp'))
-    .use(serveStatic('dist'))
-    .use(serveIndex('dist'));
-
-  var server = require('http').createServer(app)
-    .listen(9000)
-    .on('listening', function () {
-      console.log('Started connect web server on http://localhost:9000');
-    });
+  gulp.src('dist')
+    .pipe(server({
+      livereload: true
+    }));
 });
 
 gulp.task('move', function() {
