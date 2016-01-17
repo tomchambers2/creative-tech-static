@@ -81,6 +81,11 @@ section p.caption {
 	margin-top: 5px;
 }
 
+.side-image-left {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
 section ul, section ol {
 	width: 60%;
 	margin: 30px auto 30px auto;
@@ -234,9 +239,10 @@ section.work .grid {
  }
 
 
-/* blog */
-section.blog h2 {
-	margin-bottom: 0px;
+/* case studies */
+.hellenic-film-awards .carousel {
+	width: 853px;
+	margin: 0 auto;
 }
 
 

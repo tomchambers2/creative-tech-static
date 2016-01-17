@@ -1,4 +1,10 @@
 $(document).on('ready', function() {
+	$('.hellenic-film-awards .carousel').slick({
+		autoplay: true,
+		accessibility: true,
+		dots: true
+	});
+
 	$('section.people').height($('section.people').height())
 
 	$('.person-text-container.left').append($('.person-text.tom').clone().addClass('swapped').removeClass('original'));

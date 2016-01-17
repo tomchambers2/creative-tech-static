@@ -5,13 +5,12 @@ function setVideoHeight() {
 }
 
 $(document).ready(function(){
-
 	$('.carousel-container').on('init', function() {
 		document.getElementById('book-awards-video').play();
 		setVideoHeight();
 	});
 
-	$( window ).resize(function() {
+	$(window).resize(function() {
 		setVideoHeight();
 	});
 
@@ -19,7 +18,7 @@ $(document).ready(function(){
 		autoplay: true,
 		accessibility: true,
 		dots: true,
-		autoplaySpeed: 9000
+		autoplaySpeed: 5000
 	});
 
 	$('.grid').imagesLoaded( function(){
