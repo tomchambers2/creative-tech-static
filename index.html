@@ -9,18 +9,26 @@
 	<link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-	<nav>
+	<header>
 		<a href="/"><h1 class="pull-left">random quark</h1></a>
-		<ul class="pull-right">
-			<li><a href="/#about">about</a></li>
-			<li><a href="/#work">work</a></li>
-			<li><a href="/#people">people</a></li>
-			<li><a href="/#contact">contact</a></li>
-		</ul>
-	</nav>
+		<nav class="nav-collapse">
+			<ul class="pull-right">
+				<li><a href="/#about">about</a></li>
+				<li><a href="/#work">work</a></li>
+				<li><a href="/#people">people</a></li>
+				<li><a href="/#contact">contact</a></li>
+			</ul>
+		</nav>
+	</header>
 	<div class="cf"></div>
 
-		<section class="carousel">
+		<div class="mobile-only">
+		<section>
+			<p  class="center">Email us at <a href="mailto:hello@randomquark.com">hello@randomquark.com</a></p>
+		</section>
+	</div>
+
+	<section class="carousel">
 		<div class="carousel-container">
 			<div class="carousel-item">
 				<video autoplay class="carousel-video" id="book-awards-video" loop muted>
@@ -110,7 +118,13 @@
 			  	<img src="images/projects/recycling-scripts.jpg" alt="">
 			  	<span class="title">Recycling Scripts</span>
 			  </div>
-			 </a>	
+			</a>
+			<a href="/case-studies/code-poetry.html">
+			  <div class="grid-item">
+			  	<img src="images/projects/code-poetry.jpg" alt="">
+			  	<span class="title">Codepoetry</span>
+			  </div>
+			</a>			
 		</div>		
 	</section>	
 
