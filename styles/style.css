@@ -10,6 +10,10 @@ h1 {
 	font-size: 24px;
 }
 
+.carousel-item h1 {
+	font-size: 80px;
+}
+
 h2 {
 	border-bottom: 5px solid #666;
 	display: inline-block;
