@@ -7,6 +7,7 @@ html, body {
 
 h1 {
 	margin: 0;
+	font-size: 24px;
 }
 
 h2 {
@@ -29,20 +30,20 @@ a {
 }
 
 /* top */
-nav {
+header {
 	height: 50px;
 	border-bottom: 2px solid #aaa;
-	box-shadow: 0px 2px 5px 0px #424242;	
+	box-shadow: 0px 2px 5px 0px #424242;
 	position: relative;
 	z-index: 10;
 }
 
-nav h1 {
+header h1 {
 	margin-left: 30px;
 	margin-top: 10px;
 }
 
-nav ul {
+header ul {
 	margin-right: 30px;
 	margin-top: 15px;
 }
@@ -59,7 +60,7 @@ nav ul li:last-of-type {
 	margin-right: 10px;
 }
 
-nav a, nav a:visited {
+header a, header a:visited {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
@@ -276,4 +277,42 @@ a:visited {
 
 .center {
 	text-align: center;
+}
+
+.video-wrapper {
+	margin: auto;
+	width: 80%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: auto;
+}
+
+
+.mobile-only {
+	display: none;
+}
+
+/* breakpoints */
+@media (max-device-width: 843px) {
+	.mobile-only {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	.carousel {
+		display: none;
+	}
+	section p {
+		width: 85%;
+	}
 }
