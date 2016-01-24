@@ -5,6 +5,15 @@ $(document).on('ready', function() {
 		dots: true
 	});
 
+	$(window).on('scroll', function() {
+		if ($('.person').visible(true)) {
+			doLoad();
+		} else {
+			document.getElementById('theo-video').pause();
+			document.getElementById('tom-video').pause();
+		}
+	});
+
 	$('section.people').height($('section.people').height())
 
 	$('.person-text-container.left').append($('.person-text.tom').clone().addClass('swapped').removeClass('original'));
@@ -39,7 +48,6 @@ $(document).on('ready', function() {
 
 	function getAction(currentTime) {
 		if (!currentStages.length && Math.round(currentTime) === 0) {
-			console.log('reset')
 			currentStages = stages.slice(0);
 		}
 		for (var i = 0; i < currentStages.length; i++) {
