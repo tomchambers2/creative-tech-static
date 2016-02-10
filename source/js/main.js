@@ -1,13 +1,15 @@
-// function setVideoHeight() {
-// 	var offset = $('.carousel-video').height() - $('.carousel-item').height()
-// 	console.log(offset)
-// 	$('.carousel-video').css({ bottom: offset });
-// }
+function setVideoHeight() {
+	console.log('setting height')
+	var offset = $('.showreel-container video').height() - $('.showreel-container').height()
+	console.log(offset)
+	$('#showreel-video').css({ bottom: offset, position: 'relative' });
+}
 
 $(document).ready(function(){
-	// $(window).resize(function() {
-	// 	setVideoHeight();
-	// });
+	$(window).resize(function() {
+		setVideoHeight();
+	});
+	setVideoHeight();
 
 	$(window).on('scroll', function() {
 		var video = document.getElementById('showreel-video');

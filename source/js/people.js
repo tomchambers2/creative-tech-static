@@ -1,10 +1,4 @@
 $(document).on('ready', function() {
-	$('.hellenic-film-awards .carousel').slick({
-		autoplay: true,
-		accessibility: true,
-		dots: true
-	});
-
 	$(window).on('scroll', function() {
 		if ($('.person').visible(true)) {
 			doLoad();

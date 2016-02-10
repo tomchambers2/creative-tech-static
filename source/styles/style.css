@@ -98,6 +98,17 @@ section.blog p {
 	text-align: center;
 }
 
+/* video */
+.showreel-container {
+	width: 100%;
+	height: calc(100% - 50px);
+	overflow: hidden;
+}
+
+.showreel-container video {
+	width: 100%;
+}
+
 /* us */
 .person-holder {
 	width: 50%;
