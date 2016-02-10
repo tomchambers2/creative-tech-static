@@ -10,12 +10,6 @@ h1 {
 	font-size: 24px;
 }
 
-.carousel-item h1 {
-	font-size: 80px;
-	width: 50%;
-	margin: auto;
-	margin-top: 10%;
-}
 
 h2 {
 	border-bottom: 5px solid #666;
@@ -104,65 +98,6 @@ section.blog p {
 	text-align: center;
 }
 
-section.carousel {
-	height: calc(100% - 50px);
-	background: #000;
-	color: #fff;
-}
-
-.carousel-container {
-	height: 100%;
-}
-
-video.carousel-video {
-	width: 100%;
-	position: relative;
-	bottom: 0;
-}
-
-.slick-slider, .slick-list, .slick-track {
-	height: 100%;
-}
-
-.slick-dots {
-	bottom: 0px
-}
-
-.slick-dots li button:before {
-	color: #fff;
-	opacity: 0.5;
-	font-size: 14px;
-}
-
-.slick-dots li.slick-active button:before {
-	color: #fff;
-	opacity: 1;
-	font-size: 14px;
-}
-
-.slick-prev, .slick-next {
-	z-index: 10;
-}
-
-.slick-prev {
-	left: 50px;
-}
-
-
-.slick-next {
-	right: 50px;
-}
-
-.slick-prev:before, .slick-next:before {
-	font-size: 30px;
-}
-
-.carousel-item {
-	height: 100%;
-	width: 100%;
-	background-size: cover; 
-}
-
 /* us */
 .person-holder {
 	width: 50%;
@@ -245,14 +180,6 @@ section.work .grid {
   transform: scale(1.05);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
  }
-
-
-/* case studies */
-.hellenic-film-awards .carousel {
-	width: 853px;
-	margin: 0 auto;
-}
-
 
 /* fonts */
 .primary-text, h1, h2, h3, nav, nav ul {
