@@ -71,3 +71,7 @@ section ul, section ol {
 section.blog p {
 	text-align: center;
 }
+
+img, iframe {
+	max-width: 100%;
+}
