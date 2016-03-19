@@ -1,0 +1,73 @@
+/* global */
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+header {
+	height: 50px;
+	border-bottom: 2px solid #aaa;
+	box-shadow: 0px 2px 5px 0px #424242;
+	position: relative;
+	z-index: 10;
+}
+
+header h1 {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+header ul {
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+nav ul li {
+	float: left;
+	list-style: none;
+	margin-right: 50px;
+}
+
+nav ul li:last-of-type {
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+}
+
+header a, header a:visited {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+section {
+	text-align: center;
+}
+
+section p {
+	width: 60%;
+	margin: 30px auto 30px auto;
+	text-align: justify;
+}
+
+section p.caption {
+	text-align: center;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+.side-image-left {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+section ul, section ol {
+	width: 60%;
+	margin: 30px auto 30px auto;
+	text-align: left;
+}
+
+section.blog p {
+	text-align: center;
+}

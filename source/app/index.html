@@ -1,10 +1,4 @@
-	<div class="mobile-only">
-		<section>
-			<p  class="center">Email us at <a href="mailto:hello@randomquark.com">hello@randomquark.com</a></p>
-		</section>
-	</div>
-
-	<section class="showreel-container">
+	<section class="showreel-container not-mobile">
 		<video autoplay id="showreel-video" muted>
 			<source src="/videos/showreel.webm">
 			<source src="/videos/showreel.mp4">
@@ -15,10 +9,15 @@
 		<a name="about"></a>
 		<h2>about random quark</h2>
 		<p>Random quark is a creative technology company building state of the art, engaging experiences in large-format projections, interactive installations and the web.</p>
+		<div class="more-text not-mobile">
+			<p>We specialize in designing and developing experiences that combine the real with the virtual. We create bespoke interactive installations that augment experiences and environments. By applying creative twists, we endevour to highlight our relationship with machines and ignite the potential of participants as actors. Apart from commercial commissions we work also in artistic contexts, collaborating with artists and designers to realize their vision.</p>
 
-		<p>We specialize in designing and developing experiences that combine the real with the virtual. We create bespoke interactive installations that augment experiences and environments. By applying creative twists, we endevour to highlight our relationship with machines and ignite the potential of participants as actors. Apart from commercial commissions we work also in artistic contexts, collaborating with artists and designers to realize their vision.</p>
-
-		<p>We strive to maintain a balance between the use of technology and the needs of a production. Our extensive combined knowledge includes specialization in computer graphics, web and mobile technologies, machine vision, electronics &amp; hardware and virtual reality. Our work owes a lot to the free software movement and we regularly borrow from and contribute to open source projects.</p>
+			<p>We strive to maintain a balance between the use of technology and the needs of a production. Our extensive combined knowledge includes specialization in computer graphics, web and mobile technologies, machine vision, electronics &amp; hardware and virtual reality. Our work owes a lot to the free software movement and we regularly borrow from and contribute to open source projects.</p>
+		</div>
+		<p class="read-more mobile-only">		
+			<span class="off">Read more</span>
+			<span class="on hidden">Read less</span>
+		</p>		
 	</section>
 
 	<section class="work">
@@ -121,6 +120,6 @@
 
 	<section>
 		<a name="contact"></a>
-		<h2>contact</h2>
+		<h2 class="no-gap">contact</h2>
 		<p class="center">Like what you see? Get in touch at <a href="mailto:hello@randomquark.com">hello@randomquark.com</a></p>
 	</section>

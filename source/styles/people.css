@@ -1,0 +1,36 @@
+/* us */
+.person-holder {
+	width: 50%;
+	float: left;
+}
+
+.person  {
+	width: 300px;
+	height: 300px;
+	border-radius: 9999px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.person-text.swapped {
+	display: none;
+}
+
+.person video {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.person+h3 {
+	margin-top: 40px;
+}
+
+@media (max-device-width: 843px) {
+	.person-holder {
+		width: 100%;
+		margin-top: 50px;
+	}
+}

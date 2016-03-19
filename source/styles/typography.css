@@ -1,0 +1,70 @@
+/* fonts */
+.primary-text, h1, h2, h3, nav, nav ul {
+	font-family: 'Roboto Slab', serif;
+}
+
+p {
+	font-size: 16px;
+}
+
+
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	border-bottom: 5px solid #666;
+	display: inline-block;
+	padding: 0 10px 5px 10px;
+	margin: 120px auto 40px auto;
+}
+
+h2.no-gap {
+	margin-bottom: 0;
+}
+
+h3 {
+	margin-top: 60px;
+}
+
+.secondary-text, p, li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:visited {
+	color: #888;
+}
+
+section li {
+	list-style-position: inside;
+}
+
+a {
+	color: #000;
+}
+
+.read-more {
+	text-align: center;
+	text-decoration: underline;
+}
+
+@media (max-device-width: 843px) {
+	p {
+		font-size: 24px;
+	}
+
+	section p {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 30px;
+		margin: 60px auto 40px auto;
+	}
+	h3 {
+		font-size: 40px;
+	}
+}

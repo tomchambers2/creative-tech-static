@@ -1,0 +1,22 @@
+.mobile-only {
+	display: none;
+}
+
+/* breakpoints */
+@media (max-device-width: 843px) {
+	.not-mobile {
+		display: none;
+	}
+	.mobile-only {
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	.carousel {
+		display: none;
+	}
+	section p {
+		width: 85%;
+	}
+}
