@@ -1,4 +1,8 @@
 $(document).on('ready', function() {
+	if (window.screen.width < 843) {
+		return;
+	};
+
 	$(window).on('scroll', function() {
 		if ($('.person').visible(true)) {
 			doLoad();
@@ -48,7 +52,6 @@ $(document).on('ready', function() {
 			if (currentStages[i].time <= currentTime) {
 				var action = currentStages[i].action;
 				currentStages.splice(i, 1);
-				console.log(action, currentTime)
 				return action;
 			}
 		};

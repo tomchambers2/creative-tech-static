@@ -1,11 +1,19 @@
 function setVideoHeight() {
-	console.log('setting height')
 	var offset = $('.showreel-container video').height() - $('.showreel-container').height()
-	console.log(offset)
 	$('#showreel-video').css({ bottom: offset, position: 'relative' });
 }
 
 $(document).ready(function(){
+	$('.read-more').click(function() {
+		$('.more-text').slideToggle();
+		$('.read-more .off').toggle();
+		$('.read-more .on').toggle();
+	});
+
+	if (window.screen.width < 843) {
+		return;
+	};	
+
 	$(window).resize(function() {
 		setVideoHeight();
 	});
