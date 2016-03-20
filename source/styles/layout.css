@@ -75,3 +75,11 @@ section.blog p {
 img, iframe {
 	max-width: 100%;
 }
+
+@media screen and (max-device-width: 843px) {
+	section ul {
+		font-size: 24px;
+		/*margin: 0 30px 30px 30px;*/
+		width: 85%;
+	}
+}
