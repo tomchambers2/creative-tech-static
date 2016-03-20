@@ -61,14 +61,13 @@
     }
 
     .grid-item img, .grid-item-large img {
-        /*width: calc(100% - 60px);*/
+        width: 300px;
     }
     .grid-item .title {
         opacity: 1;
-/*        width: calc(100% - 70px);
-        font-size: 80px;
-        height: 130px;
-        top: -145px;    */ 
+    }
+    .grid-item-large .title {
+        width: 290px;
     }
     .grid-item:hover {
         transform: none;
