@@ -37,10 +37,18 @@ a:visited {
 	color: #888;
 }
 
+section ul {
+	padding: 0;
+}
+
 section li {
 	list-style-position: inside;
-	margin-bottom: 15px;
 }
+
+section ol li {
+	margin-bottom: 15px;	
+}
+
 
 a {
 	color: #000;
@@ -57,11 +65,11 @@ a {
 	}
 
 	h2 {
-		font-size: 30px;
+		font-size: 22px;
 		margin: 60px auto 40px auto;
 		border: none;
 	}
 	h3 {
-		font-size: 25px;
+		font-size: 20px;
 	}
 }
