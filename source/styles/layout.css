@@ -52,6 +52,10 @@ section p {
 	text-align: justify;
 }
 
+section ul {
+	max-width: 843px;
+}
+
 section p.caption {
 	text-align: center;
 	font-style: italic;
